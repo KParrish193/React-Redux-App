@@ -7,9 +7,9 @@ export const FETCH_TOGGLE = "FETCH_TOGGLE";
 //action creator
 export const actionName = () => dispatch => {
     dispatch({ type: FETCH_TOGGLE });
-    axios.get('https://www.tronalddump.io/')
-        .then(res => 
-            console.log(res),
-            dispatch ({ type: FETCH_SUCCESS, payload: res.data.quote}))
+    axios
+        .get('https://www.tronalddump.io/quote')
+        .then(res => console.log(res))
+            // dispatch ({ type: FETCH_SUCCESS, payload: res }))
         .catch(err => dispatch({ type: FETCH_TOGGLE, payload: err }))
 };

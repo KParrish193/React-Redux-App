@@ -2,7 +2,7 @@ import { FETCH_TOGGLE, FETCH_SUCCESS } from '../actions/index.js';
 
 const initialState = {
     date: Date.now(),
-    drumpism: "",
+    dumpism: "",
     error: "",
     isFetching: false
 }
@@ -18,7 +18,7 @@ const asyncReducer = (state=initialState, action) => {
         case FETCH_SUCCESS:
             return {
                 ...state,
-                drumpism: action.payload,
+                dumpism: action.payload,
                 isFetching: false, 
                 error: ""
             }
