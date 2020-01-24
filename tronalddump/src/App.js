@@ -32,7 +32,7 @@ function App() {
           color: "white"
         }}
       >
-        Disclaimer: The views and opinions expressed in these quotes are those
+        *Disclaimer: The views and opinions expressed in these quotes are those
         of the author and do not necessarily reflect this website. Quotes are
         not vetted or fact checked and are displayed at random.{" "}
       </h5>

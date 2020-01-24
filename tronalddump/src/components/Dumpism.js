@@ -16,8 +16,20 @@ border-bottom: 3px orange solid;
 
 const ImgContainer = styled.div`
 display: flex;
-min-width: 35%;
+flex-direction: column;
+min-width: 300px;
 `
+const Credit = styled.h5`
+font-size: 8px,
+margin: 0 auto,
+color: black;
+text-decoration: none;
+`
+const CreditTag = styled.a`
+text-decoration: none;
+color: orange;
+`
+
 const DumpismContainer = styled.div`
 display: flex;
 flex-direction: column;
@@ -25,8 +37,8 @@ justify-content: center;
 align-items: center;
 border: 2px solid #282c34;
 border-radius: 35px;
-min-width: 55%;
-max-width: 55%;
+min-width: 60%;
+max-width: 60%;
 `
 const Text = styled.span`
 padding: 10%;
@@ -49,6 +61,9 @@ const Dumpism = props => {
         <Body>
         <ImgContainer>
             <img src={Fffr} alt="trump cartoon"></img>
+            <Credit>
+            Image credit: <CreditTag href="https://friendlystock.com">FriendlyStock</CreditTag>
+            </Credit>
         </ImgContainer>
         <DumpismContainer>
         <Text>{store}</Text>
