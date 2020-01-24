@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
-import newReducer from './reducers/newReducer';
+import rootReducer from './reducers/';
 import thunk from 'redux-thunk';
 
-const configRedux = () => createStore(newReducer, applyMiddleware(thunk));
+const configRedux = () => createStore(rootReducer, applyMiddleware(thunk));
 
 export default configRedux;

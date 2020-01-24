@@ -1,15 +1,15 @@
 import { FETCH_TOGGLE, FETCH_SUCCESS } from '../actions/index.js';
 
 const initialState = {
-    date: Date.now(),
     dumpism: "",
     error: "",
     isFetching: false
-}
+};
 
-const asyncReducer = (state=initialState, action) => {
+const asyncReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_TOGGLE:
+            console.log('hamburger')
             return {
                 ...state,
                 isFetching: !state.isFetching,

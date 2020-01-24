@@ -1,6 +1,6 @@
 
 import { combineReducers } from 'redux';
-import newReducer from './newReducer.js/index.js';
+import newReducer from './newReducer';
 
 export default combineReducers({
     newReducer
